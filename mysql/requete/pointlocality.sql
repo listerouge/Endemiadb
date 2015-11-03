@@ -1,0 +1,2 @@
+SELECT idTaxEndemia AS 'idTaxRLAPlantsNC', NomTaxonBinomial AS 'Binomial', SousEspece AS'Subspecies', SousPopulation AS 'Subpop', Presence AS 'Presence', Origine AS 'Origin', Saisonnalite AS 'Seasonal', Compilateur AS 'Compiler', CompilationAnnee AS 'Year', Credit AS 'Citation', AnneeObservation AS 'Event_Year', Latitude AS 'Dec_Lat', Longitude AS 'Dec_Long', ReferentielSpatial AS 'SpatialRef', DonneeSensible AS 'Data_Sens', RaisonDonneeSensible AS 'Sens_Comm' FROM endemiadb.occurence
+WHERE FiabiliteDonnee = 'fiable' AND idTaxEndemia != '321'

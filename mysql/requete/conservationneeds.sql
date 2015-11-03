@@ -1,0 +1,7 @@
+SELECT Taxon_idTaxEndemia AS 'idTaxRLAPlantsNC', CodePreconisationConservation AS 'ConservationActions.ConservationActionsSubfield.ConservationActionsLookup',CategoriePreconisationEN AS 'ConservationActions.ConservationActionsSubfield.ConservationActionsName',NotePreconisationConservationEN AS 'ConservationActions.ConservationActionsSubfield.note' FROM endemiadb.preconisationconservation
+INNER JOIN jointpreconisationconservationevaluation
+ON idPreconisationConservation = PreconisationConservation_idPreconisationConservation
+INNER JOIN evaluationlisterouge
+ON idEvaluationListeRouge = EvaluationListeRouge_idEvaluationListeRouge
+INNER JOIN codeiucn
+ON CodeIUCN = CodePreconisationConservation

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:html="http://www.w3.org/TR/REC-html40">
+<Worksheet ss:Name="Table1">
+	<Table>
+		<Column ss:Index="3" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="4" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="5" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="6" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Row>
+			<Cell><Data ss:Type="String">idTaxEndemia</Data></Cell>
+			<Cell><Data ss:Type="String">idTaxFlorical</Data></Cell>
+			<Cell><Data ss:Type="String">Taxon</Data></Cell>
+			<Cell><Data ss:Type="String">CodePreconisationRechercheUICN</Data></Cell>
+			<Cell><Data ss:Type="String">DescriptionRecherche</Data></Cell>
+			<Cell><Data ss:Type="String">NoteRechercheFR</Data></Cell>
+			<Cell><Data ss:Type="String">DureeRecherche</Data></Cell>
+		</Row>
+
+		<Row>
+			<Cell><Data ss:Type="Number">3602</Data></Cell>
+			<Cell><Data ss:Type="Number">1276</Data></Cell>
+			<Cell><Data ss:Type="String">Hibbertia bouletii</Data></Cell>
+			<Cell><Data ss:Type="String">1.2</Data></Cell>
+			<Cell><Data ss:Type="String">Prospection </Data></Cell>
+			<Cell><Data ss:Type="String">en aval confluence entre creek Pernod et lac Yaté </Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">3602</Data></Cell>
+			<Cell><Data ss:Type="Number">1276</Data></Cell>
+			<Cell><Data ss:Type="String">Hibbertia bouletii</Data></Cell>
+			<Cell><Data ss:Type="String">1.2</Data></Cell>
+			<Cell><Data ss:Type="String">Prospection </Data></Cell>
+			<Cell><Data ss:Type="String">berges hautes de la rivière Yaté </Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">3602</Data></Cell>
+			<Cell><Data ss:Type="Number">1276</Data></Cell>
+			<Cell><Data ss:Type="String">Hibbertia bouletii</Data></Cell>
+			<Cell><Data ss:Type="String">1.2</Data></Cell>
+			<Cell><Data ss:Type="String">Prospection </Data></Cell>
+			<Cell><Data ss:Type="String">zone sur le fond du creek Pernod qui à moyen terme devrait être exploitée (à faire selon emprise des ruissellements) </Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">320</Data></Cell>
+			<Cell><Data ss:Type="Number">1277</Data></Cell>
+			<Cell><Data ss:Type="String">Hibbertia comptonii</Data></Cell>
+			<Cell><Data ss:Type="String">1.5</Data></Cell>
+			<Cell><Data ss:Type="String">Identifier les menaces en cause par rapport au manque de régénération observée</Data></Cell>
+			<Cell><Data ss:Type="String"> </Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">320</Data></Cell>
+			<Cell><Data ss:Type="Number">1277</Data></Cell>
+			<Cell><Data ss:Type="String">Hibbertia comptonii</Data></Cell>
+			<Cell><Data ss:Type="String">3.1</Data></Cell>
+			<Cell><Data ss:Type="String">Avoir des données sur le manque de régénération</Data></Cell>
+			<Cell><Data ss:Type="String"> </Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">320</Data></Cell>
+			<Cell><Data ss:Type="Number">1277</Data></Cell>
+			<Cell><Data ss:Type="String">Hibbertia comptonii</Data></Cell>
+			<Cell><Data ss:Type="String">3.4</Data></Cell>
+			<Cell><Data ss:Type="String">Suivi de la qualité de l&#39;habitat</Data></Cell>
+			<Cell><Data ss:Type="String"> </Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">3603</Data></Cell>
+			<Cell><Data ss:Type="Number">1279</Data></Cell>
+			<Cell><Data ss:Type="String">Hibbertia ebracteata</Data></Cell>
+			<Cell><Data ss:Type="String">1.2</Data></Cell>
+			<Cell><Data ss:Type="String">Prospection </Data></Cell>
+			<Cell><Data ss:Type="String">les zones intermédiaires entre les stations connues </Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">3604</Data></Cell>
+			<Cell><Data ss:Type="Number">1280</Data></Cell>
+			<Cell><Data ss:Type="String">Hibbertia emarginata</Data></Cell>
+			<Cell><Data ss:Type="String">1.2</Data></Cell>
+			<Cell><Data ss:Type="String">Prospection </Data></Cell>
+			<Cell><Data ss:Type="String">sur les pentes et les zones à éboulis </Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">3605</Data></Cell>
+			<Cell><Data ss:Type="Number">1281</Data></Cell>
+			<Cell><Data ss:Type="String">Hibbertia favieri</Data></Cell>
+			<Cell><Data ss:Type="String">1.2</Data></Cell>
+			<Cell><Data ss:Type="String">Prospection </Data></Cell>
+			<Cell><Data ss:Type="String">en aval confluence entre creek Pernod et lac Yaté </Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">3605</Data></Cell>
+			<Cell><Data ss:Type="Number">1281</Data></Cell>
+			<Cell><Data ss:Type="String">Hibbertia favieri</Data></Cell>
+			<Cell><Data ss:Type="String">1.2</Data></Cell>
+			<Cell><Data ss:Type="String">Prospection </Data></Cell>
+			<Cell><Data ss:Type="String">berges hautes de la rivière Yaté </Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">3605</Data></Cell>
+			<Cell><Data ss:Type="Number">1281</Data></Cell>
+			<Cell><Data ss:Type="String">Hibbertia favieri</Data></Cell>
+			<Cell><Data ss:Type="String">1.2</Data></Cell>
+			<Cell><Data ss:Type="String">Prospection </Data></Cell>
+			<Cell><Data ss:Type="String">zone sur le fond du creek Pernod qui à moyen terme devrait être exploitée (à faire selon emprise des ruissellements) </Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">3606</Data></Cell>
+			<Cell><Data ss:Type="Number">1282</Data></Cell>
+			<Cell><Data ss:Type="String">Hibbertia heterotricha</Data></Cell>
+			<Cell><Data ss:Type="String">1.2</Data></Cell>
+			<Cell><Data ss:Type="String">Prospection </Data></Cell>
+			<Cell><Data ss:Type="String">à mener en cas de réouverture de mine  </Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">3608</Data></Cell>
+			<Cell><Data ss:Type="Number">1285</Data></Cell>
+			<Cell><Data ss:Type="String">Hibbertia margaretae</Data></Cell>
+			<Cell><Data ss:Type="String">1.2</Data></Cell>
+			<Cell><Data ss:Type="String">Prospection </Data></Cell>
+			<Cell><Data ss:Type="String">Kouakoué </Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">3609</Data></Cell>
+			<Cell><Data ss:Type="Number">1286</Data></Cell>
+			<Cell><Data ss:Type="String">Hibbertia moratii</Data></Cell>
+			<Cell><Data ss:Type="String">3.1</Data></Cell>
+			<Cell><Data ss:Type="String">Suivi du nombre d&#39;individus</Data></Cell>
+			<Cell><Data ss:Type="String"> </Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">3611</Data></Cell>
+			<Cell><Data ss:Type="Number">1292</Data></Cell>
+			<Cell><Data ss:Type="String">Hibbertia rubescens</Data></Cell>
+			<Cell><Data ss:Type="String">3.4</Data></Cell>
+			<Cell><Data ss:Type="String">Suivi de la qualité de l&#39;habitat</Data></Cell>
+			<Cell><Data ss:Type="String"> </Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">2445</Data></Cell>
+			<Cell><Data ss:Type="Number">1294</Data></Cell>
+			<Cell><Data ss:Type="String">Hibbertia tontoutensis</Data></Cell>
+			<Cell><Data ss:Type="String">1.2</Data></Cell>
+			<Cell><Data ss:Type="String">Prospection </Data></Cell>
+			<Cell><Data ss:Type="String">Berges de la rivière Kalouehola où l&#39;espèce H. favieri est déjà présente </Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">2445</Data></Cell>
+			<Cell><Data ss:Type="Number">1294</Data></Cell>
+			<Cell><Data ss:Type="String">Hibbertia tontoutensis</Data></Cell>
+			<Cell><Data ss:Type="String">1.2</Data></Cell>
+			<Cell><Data ss:Type="String">Prospection </Data></Cell>
+			<Cell><Data ss:Type="String">Chutes de la Madeleine </Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+		</Row>	</Table>
+</Worksheet>
+</Workbook>

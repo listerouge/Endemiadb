@@ -1,4 +1,4 @@
-SELECT Taxon_idTaxEndemia AS 'idTaxEndemia', concat(Genre,' ',Espece) AS 'Taxon', CodePreconisationConservation AS 'CodePreconisationConservationUICN', DescriptionPreconisationConservation, NotePreconisationConservationFR, DureePreconisationConservation FROM endemiadb.preconisationconservation
+SELECT Taxon_idTaxEndemia AS 'idTaxEndemia',idTaxFlorical, concat(Genre,' ',Espece) AS 'Taxon', CodePreconisationConservation AS 'CodePreconisationConservationUICN', DescriptionPreconisationConservation, NotePreconisationConservationFR, DureePreconisationConservation FROM endemiadb.preconisationconservation
 INNER JOIN jointpreconisationconservationevaluation
 ON idPreconisationConservation = PreconisationConservation_idPreconisationConservation
 INNER JOIN evaluationlisterouge

@@ -16,30 +16,32 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `souspopulation`
+-- Table structure for table `nomcommun`
 --
 
-DROP TABLE IF EXISTS `souspopulation`;
+DROP TABLE IF EXISTS `nomcommun`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `souspopulation` (
-  `idSousPopulation` int(11) NOT NULL AUTO_INCREMENT,
-  `EvaluationListeRouge_idEvaluationListeRouge` int(11) NOT NULL,
-  `IndividusMatureSousPopulation` int(11) DEFAULT NULL,
-  `IndividusMatureSousPopulationEstimation` enum('<50','<250','<1000','<2500','<10000','>10000') DEFAULT NULL,
-  `LocalisationSousPopulation` varchar(255) NOT NULL,
-  PRIMARY KEY (`idSousPopulation`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+CREATE TABLE `nomcommun` (
+  `idNomCommun` int(11) NOT NULL AUTO_INCREMENT,
+  `Taxon_idTaxEndemia` int(11) NOT NULL,
+  `NomCommun` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `Langue` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'french',
+  `LangueCode` varchar(3) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'FR',
+  `NomPrincipal` tinyint(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`idNomCommun`),
+  KEY `fk_nomcommun_taxon` (`Taxon_idTaxEndemia`),
+  CONSTRAINT `fk_nomcommun_taxon` FOREIGN KEY (`Taxon_idTaxEndemia`) REFERENCES `taxon` (`idTaxEndemia`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `souspopulation`
+-- Dumping data for table `nomcommun`
 --
 
-LOCK TABLES `souspopulation` WRITE;
-/*!40000 ALTER TABLE `souspopulation` DISABLE KEYS */;
-INSERT INTO `souspopulation` VALUES (1,3,0,'<50','berge Nord du lac de Yaté\r'),(2,3,0,'<50','Confluence entre la rivière des lacs et le creek Pernod\r'),(3,8,0,'<50','berge Nord du lac de Yaté\r'),(4,8,0,'<50','Confluence entre la rivière des lacs et le creek Pernod\r'),(5,19,0,'<2500','Mont Taom\r');
-/*!40000 ALTER TABLE `souspopulation` ENABLE KEYS */;
+LOCK TABLES `nomcommun` WRITE;
+/*!40000 ALTER TABLE `nomcommun` DISABLE KEYS */;
+/*!40000 ALTER TABLE `nomcommun` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -51,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-11-12 18:25:45
+-- Dump completed on 2015-11-12 18:19:29

@@ -16,30 +16,32 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `souspopulation`
+-- Table structure for table `jointmenaceevaluation`
 --
 
-DROP TABLE IF EXISTS `souspopulation`;
+DROP TABLE IF EXISTS `jointmenaceevaluation`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `souspopulation` (
-  `idSousPopulation` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `jointmenaceevaluation` (
+  `idJointMenaceEvaluation` int(11) NOT NULL AUTO_INCREMENT,
+  `Menace_idMenace` int(11) NOT NULL,
   `EvaluationListeRouge_idEvaluationListeRouge` int(11) NOT NULL,
-  `IndividusMatureSousPopulation` int(11) DEFAULT NULL,
-  `IndividusMatureSousPopulationEstimation` enum('<50','<250','<1000','<2500','<10000','>10000') DEFAULT NULL,
-  `LocalisationSousPopulation` varchar(255) NOT NULL,
-  PRIMARY KEY (`idSousPopulation`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+  PRIMARY KEY (`idJointMenaceEvaluation`),
+  KEY `fk_evaluationlisterougeidevaluation_evaluationlisterouge` (`EvaluationListeRouge_idEvaluationListeRouge`),
+  KEY `fk_menaceidmenace_menace` (`Menace_idMenace`),
+  CONSTRAINT `fk_evaluationlisterougeidevaluation_evaluationlisterouge` FOREIGN KEY (`EvaluationListeRouge_idEvaluationListeRouge`) REFERENCES `evaluationlisterouge` (`idEvaluationListeRouge`),
+  CONSTRAINT `fk_menaceidmenace_menace` FOREIGN KEY (`Menace_idMenace`) REFERENCES `menace` (`idMenace`)
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `souspopulation`
+-- Dumping data for table `jointmenaceevaluation`
 --
 
-LOCK TABLES `souspopulation` WRITE;
-/*!40000 ALTER TABLE `souspopulation` DISABLE KEYS */;
-INSERT INTO `souspopulation` VALUES (1,3,0,'<50','berge Nord du lac de Yaté\r'),(2,3,0,'<50','Confluence entre la rivière des lacs et le creek Pernod\r'),(3,8,0,'<50','berge Nord du lac de Yaté\r'),(4,8,0,'<50','Confluence entre la rivière des lacs et le creek Pernod\r'),(5,19,0,'<2500','Mont Taom\r');
-/*!40000 ALTER TABLE `souspopulation` ENABLE KEYS */;
+LOCK TABLES `jointmenaceevaluation` WRITE;
+/*!40000 ALTER TABLE `jointmenaceevaluation` DISABLE KEYS */;
+INSERT INTO `jointmenaceevaluation` VALUES (1,1,1),(2,2,3),(3,3,3),(4,4,3),(5,5,4),(6,6,5),(7,1,5),(8,3,5),(9,1,6),(10,3,6),(11,1,7),(12,3,7),(13,1,8),(14,3,8),(15,7,8),(16,1,9),(17,8,9),(18,3,12),(19,3,13),(20,9,14),(21,10,19),(22,11,19),(23,1,20),(24,3,20),(25,1,22),(26,3,22);
+/*!40000 ALTER TABLE `jointmenaceevaluation` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -51,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-11-12 18:25:45
+-- Dump completed on 2015-11-12 18:01:32

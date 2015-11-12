@@ -16,30 +16,28 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `souspopulation`
+-- Table structure for table `critereevaluation`
 --
 
-DROP TABLE IF EXISTS `souspopulation`;
+DROP TABLE IF EXISTS `critereevaluation`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `souspopulation` (
-  `idSousPopulation` int(11) NOT NULL AUTO_INCREMENT,
-  `EvaluationListeRouge_idEvaluationListeRouge` int(11) NOT NULL,
-  `IndividusMatureSousPopulation` int(11) DEFAULT NULL,
-  `IndividusMatureSousPopulationEstimation` enum('<50','<250','<1000','<2500','<10000','>10000') DEFAULT NULL,
-  `LocalisationSousPopulation` varchar(255) NOT NULL,
-  PRIMARY KEY (`idSousPopulation`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+CREATE TABLE `critereevaluation` (
+  `idCritereEvaluation` int(11) NOT NULL AUTO_INCREMENT,
+  `CritereEvaluation` varchar(45) NOT NULL,
+  PRIMARY KEY (`idCritereEvaluation`),
+  UNIQUE KEY `CritereEvaluation_UNIQUE` (`CritereEvaluation`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `souspopulation`
+-- Dumping data for table `critereevaluation`
 --
 
-LOCK TABLES `souspopulation` WRITE;
-/*!40000 ALTER TABLE `souspopulation` DISABLE KEYS */;
-INSERT INTO `souspopulation` VALUES (1,3,0,'<50','berge Nord du lac de Yaté\r'),(2,3,0,'<50','Confluence entre la rivière des lacs et le creek Pernod\r'),(3,8,0,'<50','berge Nord du lac de Yaté\r'),(4,8,0,'<50','Confluence entre la rivière des lacs et le creek Pernod\r'),(5,19,0,'<2500','Mont Taom\r');
-/*!40000 ALTER TABLE `souspopulation` ENABLE KEYS */;
+LOCK TABLES `critereevaluation` WRITE;
+/*!40000 ALTER TABLE `critereevaluation` DISABLE KEYS */;
+INSERT INTO `critereevaluation` VALUES (12,'(VU) B1ab(iii)+2ab(iii)'),(13,'(VU) D2'),(6,'B1ab(iii)'),(14,'B1ab(iii,v)+2ab(iii,v)'),(7,'B1ab(iii,v)+2ab(iii,v); C2a(i)'),(15,'B1ab(iii,v); C2a(ii); D'),(5,'B1ab(v)+2ab(v); C2a(i)'),(2,'B1ab(v)+2ab(v); C2a(ii)'),(8,'B1ab(v)+2ab(v); C2a(ii); D'),(1,'B2ab(iii)'),(4,'C2a(i)'),(9,'D'),(3,'D1'),(10,'D2'),(11,'NULL');
+/*!40000 ALTER TABLE `critereevaluation` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -51,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-11-12 18:25:45
+-- Dump completed on 2015-11-12 17:14:16

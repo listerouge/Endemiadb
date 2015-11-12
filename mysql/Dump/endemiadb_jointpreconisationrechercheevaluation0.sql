@@ -16,30 +16,28 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `souspopulation`
+-- Table structure for table `jointpreconisationrechercheevaluation`
 --
 
-DROP TABLE IF EXISTS `souspopulation`;
+DROP TABLE IF EXISTS `jointpreconisationrechercheevaluation`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `souspopulation` (
-  `idSousPopulation` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `jointpreconisationrechercheevaluation` (
+  `idJointPreconisationRechercheEvaluation` int(11) NOT NULL AUTO_INCREMENT,
+  `PreconisationRecherche_idRecherche` int(11) NOT NULL,
   `EvaluationListeRouge_idEvaluationListeRouge` int(11) NOT NULL,
-  `IndividusMatureSousPopulation` int(11) DEFAULT NULL,
-  `IndividusMatureSousPopulationEstimation` enum('<50','<250','<1000','<2500','<10000','>10000') DEFAULT NULL,
-  `LocalisationSousPopulation` varchar(255) NOT NULL,
-  PRIMARY KEY (`idSousPopulation`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+  PRIMARY KEY (`idJointPreconisationRechercheEvaluation`)
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `souspopulation`
+-- Dumping data for table `jointpreconisationrechercheevaluation`
 --
 
-LOCK TABLES `souspopulation` WRITE;
-/*!40000 ALTER TABLE `souspopulation` DISABLE KEYS */;
-INSERT INTO `souspopulation` VALUES (1,3,0,'<50','berge Nord du lac de Yaté\r'),(2,3,0,'<50','Confluence entre la rivière des lacs et le creek Pernod\r'),(3,8,0,'<50','berge Nord du lac de Yaté\r'),(4,8,0,'<50','Confluence entre la rivière des lacs et le creek Pernod\r'),(5,19,0,'<2500','Mont Taom\r');
-/*!40000 ALTER TABLE `souspopulation` ENABLE KEYS */;
+LOCK TABLES `jointpreconisationrechercheevaluation` WRITE;
+/*!40000 ALTER TABLE `jointpreconisationrechercheevaluation` DISABLE KEYS */;
+INSERT INTO `jointpreconisationrechercheevaluation` VALUES (1,1,3),(2,2,3),(3,3,3),(4,4,4),(5,5,4),(6,6,4),(7,7,6),(8,8,7),(9,1,8),(10,2,8),(11,3,8),(12,9,9),(13,10,12),(14,11,13),(15,6,19),(16,12,20),(17,13,20);
+/*!40000 ALTER TABLE `jointpreconisationrechercheevaluation` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -51,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-11-12 18:25:45
+-- Dump completed on 2015-11-12 11:23:16

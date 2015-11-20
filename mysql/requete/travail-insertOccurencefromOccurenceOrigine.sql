@@ -1,0 +1,5 @@
+insert into occurence #permet d'inserer les données d'occurence de la table origine vers la table de travail occurence, requete à automatiser
+(idOccurence,NomTaxon,Province,Commune,Station,AnneeObservation,MoisObservation,JourObservation,Observateur,SourceDonnee,NumeroRecolte,NumeroPart,Media,Latitude,Longitude,AltitudeMinimale,AltitudeMaximale,GpsSource,DonneeSensible,TypeRestriction,FormationVegetale,Substrat,AutreInfoTaxon)
+
+select idOccurence,NomTaxonOrigine,ProvinceOrigine,CommuneOrigine,StationOrigine,AnneeObservationOrigine,MoisObservationOrigine,JourObservationOrigine,ObservateurOrigine,SourceDonneeOrigine,NumeroRecolteOrigine,NumeroPartOrigine,MediaOrigine,LatitudeDDOrigine,LongitudeDDOrigine,AltitudeMinimaleOrigine,AltitudeMaximaleOrigine,GpsSourceOrigine,DonneeSensibleOrigine,TypeRestrictionOrigine,FormationVegetaleOrigine,SubstratOrigine,AutreInfoTaxonOrigine from occurenceorigine
+where occurenceorigine.idOccurence between 2753 and 2758

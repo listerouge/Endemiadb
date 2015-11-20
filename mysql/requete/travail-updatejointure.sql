@@ -1,0 +1,4 @@
+update endemiadb.jointtaxonmesureconservationexistante
+inner join evaluationlisterouge
+set EvaluationListeRouge_idEvaluationListeRouge=idEvaluationListeRouge
+where jointtaxonmesureconservationexistante.Taxon_idTaxEndemia = evaluationlisterouge.Taxon_idTaxEndemia

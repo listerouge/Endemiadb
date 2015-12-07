@@ -1,2 +1,3 @@
-LOAD DATA LOCAL INFILE 'C:/Users/Endemia/Documents/12 - GestionDonnees/table-acropogon/chance2.csv' replace into table occurence 
+LOAD DATA LOCAL INFILE 'C:/Users/Endemia/Documents/12 - GestionDonnees/table-Pittos/jointEvalOccurence.csv' into table jointevaluationoccurence
 FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n'
+#(@col1,@col2) set Occurence_idOccurence=@col1,EvaluationListeRouge_idEvaluationListeRouge=@col2 

@@ -1,4 +1,6 @@
-SELECT Taxon_idTaxEndemia AS 'idTaxRLAPlantsNC', PaysOccurence AS 'CountryOccurence.CountryOccurenceSubfield.CountryOccurenceLookup',Presence AS 'CountryOccurence.CountryOccurenceSubfield.presence',Origine AS 'CountryOccurence.CountryOccurenceSubfield.origin' FROM endemiadb.airegeographique
-INNER JOIN jointairegeographiquetaxon 
-ON idAireGeographique = AireGeographique_idAireGeographique
-WHERE Taxon_idTaxEndemia != '321'
+SELECT idEvaluationListeRouge AS 'internal_taxon_id', PaysOccurence AS 'CountryOccurence.CountryOccurenceSubfield.CountryOccurenceLookup',Presence AS 'CountryOccurence.CountryOccurenceSubfield.presence',Origine AS 'CountryOccurence.CountryOccurenceSubfield.origin' FROM endemiadb.airegeographique
+INNER JOIN jointairegeographiqueevaluation
+ON idAireGeographique=AireGeographique_idAireGeographique
+INNER JOIN evaluationlisterouge
+On idEvaluationListeRouge = jointairegeographiqueevaluation.EvaluationListeRouge_idEvaluationListeRouge
+WHERE Taxon_NomScientifique like '%Hibbertia%'

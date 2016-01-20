@@ -1,0 +1,4 @@
+SELECT * INTO OUTFILE 'e:\customers.txt'
+  FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"'
+  LINES TERMINATED BY '\n'
+  FROM endemiadb.codeiucn;

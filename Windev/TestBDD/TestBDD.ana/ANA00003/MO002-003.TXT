@@ -1,0 +1,17 @@
+//MO002-003.TXT ANA00002 TO ANA00003
+jointexpertevaluation		BASE		La base du fichier est passée de SQL générique (ANSI 92) à Inconnue
+jointexpertevaluation	EvaluationListeRouge_idEvaluationListeRouge	CLEN		la rubrique EvaluationListeRouge_idEvaluationListeRouge est maintenant une clé
+occurenceorigine		IDE+		fichier avec identifiant
+occurenceorigine		BASE		La base du fichier est passée de SQL générique (ANSI 92) à Inconnue
+occurenceorigine	idOccurence	CNW	Identifiant automatique (4 octets)$Entier sur 4 octets	la rubrique idOccurence a pour nouveau type Identifiant automatique (4 oct
+evaluationlisterouge		NWL	evaluationlisterouge (idEvaluationListeRouge) et jointexpertevaluation (EvaluationListeRouge_idEvaluationListeRouge)	Nouvelle liaison entre les fichiers evaluationlisterouge (idEvaluationListeRouge) et jointexpertevaluation (EvaluationListeRouge_idEvaluationListeRouge)
+serviceecosystemique		DEL	serviceecosystemique (idServiceEcosystemique) et jointserviceecosystemiqueevaluation (ServiceEcosystemique_idServiceEcosystemique)	Liaison supprimée entre les fichiers serviceecosystemique (idServiceEcosystemique) et jointserviceecosystemiqueevaluation (ServiceEcosystemique_idServiceEcosystemique)
+evaluationlisterouge		DEL	evaluationlisterouge (idEvaluationListeRouge) et jointserviceecosystemiqueevaluation (EvaluationListeRouge_idEvaluationListeRouge)	Liaison supprimée entre les fichiers evaluationlisterouge (idEvaluationListeRouge) et jointserviceecosystemiqueevaluation (EvaluationListeRouge_idEvaluationListeRouge)
+sourcebibliographique		DEL	sourcebibliographique (idSourceBibliographique) et jointsourcebibliographiqueevaluation (SourceBibliographique_idSourceBibliographique)	Liaison supprimée entre les fichiers sourcebibliographique (idSourceBibliographique) et jointsourcebibliographiqueevaluation (SourceBibliographique_idSourceBibliographique)
+evaluationlisterouge		DEL	evaluationlisterouge (idEvaluationListeRouge) et jointsourcebibliographiqueevaluation (EvaluationListeRouge_idEvaluationListeRouge)	Liaison supprimée entre les fichiers evaluationlisterouge (idEvaluationListeRouge) et jointsourcebibliographiqueevaluation (EvaluationListeRouge_idEvaluationListeRouge)
+codeiucn		DEL	codeiucn (CodeIUCN) et menace (CodeMenace)	Liaison supprimée entre les fichiers codeiucn (CodeIUCN) et menace (CodeMenace)
+codeiucn		DEL	codeiucn (CodeIUCN) et mesureconservationexistante (CodeConservation)	Liaison supprimée entre les fichiers codeiucn (CodeIUCN) et mesureconservationexistante (CodeConservation)
+codeiucn		DEL	codeiucn (CodeIUCN) et preconisationconservation (CodePreconisationConservation)	Liaison supprimée entre les fichiers codeiucn (CodeIUCN) et preconisationconservation (CodePreconisationConservation)
+codeiucn		DEL	codeiucn (CodeIUCN) et preconisationrecherche (CodeRecherche)	Liaison supprimée entre les fichiers codeiucn (CodeIUCN) et preconisationrecherche (CodeRecherche)
+evaluationlisterouge		DEL	evaluationlisterouge (idEvaluationListeRouge) et souspopulation (EvaluationListeRouge_idEvaluationListeRouge)	Liaison supprimée entre les fichiers evaluationlisterouge (idEvaluationListeRouge) et souspopulation (EvaluationListeRouge_idEvaluationListeRouge)
+taxon		DEL	taxon (NomScientifique) et synonyme (Taxon_NomScientifique)	Liaison supprimée entre les fichiers taxon (NomScientifique) et synonyme (Taxon_NomScientifique)

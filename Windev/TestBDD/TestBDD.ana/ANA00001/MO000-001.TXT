@@ -1,0 +1,52 @@
+//MO000-001.TXT ANA00000 TO ANA00001
+jointpreconisationrechercheevaluation		NFI		nouveau fichier
+jointpreconisationconservationevaluation		NFI		nouveau fichier
+jointmenacesouspopulationpreconisation		NFI		nouveau fichier
+jointmenaceevaluation		NFI		nouveau fichier
+jointhabitatevaluation		NFI		nouveau fichier
+jointexpertevaluation		NFI		nouveau fichier
+jointevaluationoccurence		NFI		nouveau fichier
+jointevaluationmesureconservationexistante		NFI		nouveau fichier
+jointairegeographiqueevaluation		NFI		nouveau fichier
+habitat		NFI		nouveau fichier
+expert		NFI		nouveau fichier
+evaluationlisterouge		NFI		nouveau fichier
+critereevaluation		NFI		nouveau fichier
+codeiucn		NFI		nouveau fichier
+airegeographique		NFI		nouveau fichier
+taxon		NFI		nouveau fichier
+synonyme		NFI		nouveau fichier
+souspopulation		NFI		nouveau fichier
+sourcebibliographique		NFI		nouveau fichier
+serviceecosystemique		NFI		nouveau fichier
+preconisationrecherche		NFI		nouveau fichier
+preconisationconservation		NFI		nouveau fichier
+occurenceorigine		NFI		nouveau fichier
+occurence		NFI		nouveau fichier
+nomcommun		NFI		nouveau fichier
+mesureconservationexistante		NFI		nouveau fichier
+menace		NFI		nouveau fichier
+jointsourcebibliographiqueevaluation		NFI		nouveau fichier
+jointserviceecosystemiqueevaluation		NFI		nouveau fichier
+preconisationconservation		NWL	preconisationconservation (idPreconisationConservation) et jointmenacesouspopulationpreconisation (PreconisationConservation_idPreconisationConservation)	Nouvelle liaison entre les fichiers preconisationconservation (idPreconisationConservation) et jointmenacesouspopulationpreconisation (PreconisationConservation_idPreconisationConservation)
+menace		NWL	menace (idMenace) et jointmenacesouspopulationpreconisation (Menace_idMenace)	Nouvelle liaison entre les fichiers menace (idMenace) et jointmenacesouspopulationpreconisation (Menace_idMenace)
+menace		NWL	menace (idMenace) et jointmenaceevaluation (Menace_idMenace)	Nouvelle liaison entre les fichiers menace (idMenace) et jointmenaceevaluation (Menace_idMenace)
+evaluationlisterouge		NWL	evaluationlisterouge (idEvaluationListeRouge) et jointmenaceevaluation (EvaluationListeRouge_idEvaluationListeRouge)	Nouvelle liaison entre les fichiers evaluationlisterouge (idEvaluationListeRouge) et jointmenaceevaluation (EvaluationListeRouge_idEvaluationListeRouge)
+habitat		NWL	habitat (idHabitat) et jointhabitatevaluation (Habitat_idHabitat)	Nouvelle liaison entre les fichiers habitat (idHabitat) et jointhabitatevaluation (Habitat_idHabitat)
+evaluationlisterouge		NWL	evaluationlisterouge (idEvaluationListeRouge) et jointhabitatevaluation (EvaluationListeRouge_idEvaluationListeRouge)	Nouvelle liaison entre les fichiers evaluationlisterouge (idEvaluationListeRouge) et jointhabitatevaluation (EvaluationListeRouge_idEvaluationListeRouge)
+expert		NWL	expert (idExpert) et jointexpertevaluation (Expert_idExpert)	Nouvelle liaison entre les fichiers expert (idExpert) et jointexpertevaluation (Expert_idExpert)
+occurence		NWL	occurence (idOccurence) et jointevaluationoccurence (Occurence_idOccurence)	Nouvelle liaison entre les fichiers occurence (idOccurence) et jointevaluationoccurence (Occurence_idOccurence)
+evaluationlisterouge		NWL	evaluationlisterouge (idEvaluationListeRouge) et jointevaluationoccurence (EvaluationListeRouge_idEvaluationListeRouge)	Nouvelle liaison entre les fichiers evaluationlisterouge (idEvaluationListeRouge) et jointevaluationoccurence (EvaluationListeRouge_idEvaluationListeRouge)
+mesureconservationexistante		NWL	mesureconservationexistante (idMesureConservationExistante) et jointevaluationmesureconservationexistante (MesureConservationExistante_idMesureConservationExistante)	Nouvelle liaison entre les fichiers mesureconservationexistante (idMesureConservationExistante) et jointevaluationmesureconservationexistante (MesureConservationExistante_idMesureConservationExistante)
+evaluationlisterouge		NWL	evaluationlisterouge (idEvaluationListeRouge) et jointevaluationmesureconservationexistante (EvaluationListeRouge_idEvaluationListeRouge)	Nouvelle liaison entre les fichiers evaluationlisterouge (idEvaluationListeRouge) et jointevaluationmesureconservationexistante (EvaluationListeRouge_idEvaluationListeRouge)
+evaluationlisterouge		NWL	evaluationlisterouge (idEvaluationListeRouge) et jointairegeographiqueevaluation (EvaluationListeRouge_idEvaluationListeRouge)	Nouvelle liaison entre les fichiers evaluationlisterouge (idEvaluationListeRouge) et jointairegeographiqueevaluation (EvaluationListeRouge_idEvaluationListeRouge)
+airegeographique		NWL	airegeographique (idAireGeographique) et jointairegeographiqueevaluation (AireGeographique_idAireGeographique)	Nouvelle liaison entre les fichiers airegeographique (idAireGeographique) et jointairegeographiqueevaluation (AireGeographique_idAireGeographique)
+codeiucn		NWL	codeiucn (CodeIUCN) et habitat (CodeHabitat)	Nouvelle liaison entre les fichiers codeiucn (CodeIUCN) et habitat (CodeHabitat)
+taxon		NWL	taxon (NomScientifique) et evaluationlisterouge (Taxon_NomScientifique)	Nouvelle liaison entre les fichiers taxon (NomScientifique) et evaluationlisterouge (Taxon_NomScientifique)
+preconisationrecherche		NWL	preconisationrecherche (idRecherche) et jointpreconisationrechercheevaluation (PreconisationRecherche_idRecherche)	Nouvelle liaison entre les fichiers preconisationrecherche (idRecherche) et jointpreconisationrechercheevaluation (PreconisationRecherche_idRecherche)
+evaluationlisterouge		NWL	evaluationlisterouge (idEvaluationListeRouge) et jointpreconisationrechercheevaluation (EvaluationListeRouge_idEvaluationListeRouge)	Nouvelle liaison entre les fichiers evaluationlisterouge (idEvaluationListeRouge) et jointpreconisationrechercheevaluation (EvaluationListeRouge_idEvaluationListeRouge)
+preconisationconservation		NWL	preconisationconservation (idPreconisationConservation) et jointpreconisationconservationevaluation (PreconisationConservation_idPreconisationConservation)	Nouvelle liaison entre les fichiers preconisationconservation (idPreconisationConservation) et jointpreconisationconservationevaluation (PreconisationConservation_idPreconisationConservation)
+evaluationlisterouge		NWL	evaluationlisterouge (idEvaluationListeRouge) et jointpreconisationconservationevaluation (EvaluationListeRouge_idEvaluationListeRouge)	Nouvelle liaison entre les fichiers evaluationlisterouge (idEvaluationListeRouge) et jointpreconisationconservationevaluation (EvaluationListeRouge_idEvaluationListeRouge)
+souspopulation		NWL	souspopulation (idSousPopulation) et jointmenacesouspopulationpreconisation (SousPopulation_idSousPopulation)	Nouvelle liaison entre les fichiers souspopulation (idSousPopulation) et jointmenacesouspopulationpreconisation (SousPopulation_idSousPopulation)
+preconisationrecherche		NWL	preconisationrecherche (idRecherche) et jointmenacesouspopulationpreconisation (PreconisationRecherche_idRecherche)	Nouvelle liaison entre les fichiers preconisationrecherche (idRecherche) et jointmenacesouspopulationpreconisation (PreconisationRecherche_idRecherche)
+Connexion à MySQL		CNX+		

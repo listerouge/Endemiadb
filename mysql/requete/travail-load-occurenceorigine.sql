@@ -1,0 +1,4 @@
+LOAD DATA LOCAL INFILE 'C:/Users/Endemia/Documents/12 - GestionDonnees/table-Orchis/orchiatelier3Laudereau.csv' into table occurrenceorigine
+FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n'
+(@col1,@col2,@col3,@col4,@col5,@col6,@col7,@col8,@col9,@col10,@col11)
+ set  idOccurenceOr=@col1,NomTaxon=@col2,Presence=1,Origine=1,Saisonnalite=1,Compilateur= 'Chanfreau S.',CompilationAnnee=2015,Credit='NC Plants RLA',Province=@col3,Commune=@col4,Station=@col5,AnneeObservation=@col6,MoisObservation=@col7,JourObservation=@col8,Observateur=@col9,SourceDonnee=@col10,NumeroRecolte=@col11,NumeroPart=@col12,Media=@col13,Latitude=@col14,Longitude=@col15,AltitudeMinimale=@col16,AltitudeMaximale=@col17,FiabiliteDonnee=@col18,CommentaireDonnee=@col19,UtilisationEvaluation=@col20,GpsSource=@col21,DonneeSensible=@col22,TypeRestriction=@col23,AffichagePublic=@col25,FormationVegetale=@col26,Substrat=@col26,AutreInfoTaxon=@col27

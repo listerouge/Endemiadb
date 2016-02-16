@@ -1,5 +1,7 @@
-insert into occurence #permet d'inserer les données d'occurence de la table origine vers la table de travail occurence, requete à automatiser
+#requete permettant de charger dans la table occurrence les données intégrées manuellement dans la table occurrenceorigine (ex : lors de verificication des données avec les flores...)
+insert into occurrence 
+
 (idOccurence,NomTaxon,Province,Commune,Station,AnneeObservation,MoisObservation,JourObservation,Observateur,SourceDonnee,NumeroRecolte,NumeroPart,Media,Latitude,Longitude,AltitudeMinimale,AltitudeMaximale,GpsSource,DonneeSensible,TypeRestriction,FormationVegetale,Substrat,AutreInfoTaxon)
 
-select idOccurence,NomTaxonOrigine,ProvinceOrigine,CommuneOrigine,StationOrigine,AnneeObservationOrigine,MoisObservationOrigine,JourObservationOrigine,ObservateurOrigine,SourceDonneeOrigine,NumeroRecolteOrigine,NumeroPartOrigine,MediaOrigine,LatitudeDDOrigine,LongitudeDDOrigine,AltitudeMinimaleOrigine,AltitudeMaximaleOrigine,GpsSourceOrigine,DonneeSensibleOrigine,TypeRestrictionOrigine,FormationVegetaleOrigine,SubstratOrigine,AutreInfoTaxonOrigine from occurenceorigine
-where occurenceorigine.idOccurence between 2753 and 2758
+select idOccurence,NomTaxonOrigine,ProvinceOrigine,CommuneOrigine,StationOrigine,AnneeObservationOrigine,MoisObservationOrigine,JourObservationOrigine,ObservateurOrigine,SourceDonneeOrigine,NumeroRecolteOrigine,NumeroPartOrigine,MediaOrigine,LatitudeDDOrigine,LongitudeDDOrigine,AltitudeMinimaleOrigine,AltitudeMaximaleOrigine,GpsSourceOrigine,DonneeSensibleOrigine,TypeRestrictionOrigine,FormationVegetaleOrigine,SubstratOrigine,AutreInfoTaxonOrigine from occurrenceorigine
+where occurrenceorigine.idOccurence =16192 #ou between XXX and XXX

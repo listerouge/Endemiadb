@@ -1,3 +1,4 @@
+#requête permettant de charger les données sous Endemia
 SELECT NomScientifique AS'Nom taxon', Latitude, Longitude, FiabiliteDonnee AS'Type_localite', idTaxEndemia AS'Id_taxon_endemia', idTaxFlorical AS'Id_taxon_florical', replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(Station,'é','e'),'è','e'),'ê','e'),"l'",'l '),"u'",'u '),'î','i'),'ö','o'),'ï','i'),'à','a'),'"',' '),'â','a'),'ä','a'),'ü','u'),'ë','e'),'ç','c') AS 'Station',
  AnneeObservation AS 'Date observation', 
  replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(Observateur,'é','e'),'è','e'),'ê','e'),"l'",'l '),"u'",'u '),'î','i'),'ö','o'),'ï','i'),'à','a'),'"',' '),'â','a'),'ä','a'),'ü','u'),'ë','e'),'ç','c') AS Observateur,
@@ -10,5 +11,6 @@ on idEvaluationListeRouge=jointevaluationoccurrence.EvaluationListeRouge_idEvalu
 join taxon
 on NomScientifique=evaluationlisterouge.Taxon_NomScientifique
 WHERE 
-DateEvaluation='2016/01/28' and FiabiliteDonnee ='fiable'
+DateEvaluation='2016/02/18' and FiabiliteDonnee ='fiable'
 ORDER BY NomScientifique
+#possibilité de filtrer également avec l'utilisation évaluation après atelier (pour ne charger que les 'ok eval rla') et plus tard quand développement web bien avancé faire filtre sur affichage public = 1.

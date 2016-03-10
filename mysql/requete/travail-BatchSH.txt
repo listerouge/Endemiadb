@@ -1,0 +1,2 @@
+mysql -h 127.0.0.1 -u superendem -p < 20160304_SISallfieldsv2.sql | more                                                    /cygdrive/c/dev/Endemiadb/mysql/requete 1
+

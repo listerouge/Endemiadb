@@ -1,8 +1,11 @@
-SELECT idEvaluationListeRouge AS 'internal_taxon_id', CodePreconisationConservation AS 'ConservationActions.ConservationActionsSubfield.ConservationActionsLookup',CategoriePreconisationEN AS 'ConservationActions.ConservationActionsSubfield.ConservationActionsName',NotePreconisationConservationEN AS 'ConservationActions.ConservationActionsSubfield.note' FROM endemiadb.preconisationconservation
+SELECT idEvaluationListeRouge AS 'internal_taxon_id', 
+CodePreconisationConservation AS 'ConservationActions.ConservationActionsSubfield.ConservationActionsLookup',
+CategoriePreconisationEN AS 'ConservationActions.ConservationActionsSubfield.ConservationActionsName'
+FROM endemiadb.preconisationconservationstandard
 INNER JOIN jointpreconisationconservationevaluation
 ON idPreconisationConservation = PreconisationConservation_idPreconisationConservation
 INNER JOIN evaluationlisterouge
 ON idEvaluationListeRouge = EvaluationListeRouge_idEvaluationListeRouge
-INNER JOIN codeiucn
+INNER JOIN codeiucnpreconisation
 ON CodeIUCN = CodePreconisationConservation
-where Taxon_NomScientifique like '%Hibbertia%'
+WHERE AireEvaluation = 'Global' AND (DateEvaluation ='2015-07-23' OR DateEvaluation='2015-07-24') AND CategorieEvaluation != 'NE';

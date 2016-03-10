@@ -1,0 +1,8 @@
+DECLARE @count INT;
+DECLARE @max INT;
+SET @count=1;
+SET @max= (SELECT COUNT(*) FROM table1);
+WHILE(@count < @max)
+BEGIN
+    /*your database query logic*/
+END

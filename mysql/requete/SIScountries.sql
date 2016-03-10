@@ -3,4 +3,4 @@ INNER JOIN jointairegeographiqueevaluation
 ON idAireGeographique=AireGeographique_idAireGeographique
 INNER JOIN evaluationlisterouge
 On idEvaluationListeRouge = jointairegeographiqueevaluation.EvaluationListeRouge_idEvaluationListeRouge
-WHERE Taxon_NomScientifique like '%Hibbertia%'
+WHERE AireEvaluation = 'Global' AND (DateEvaluation ='2015-07-23' OR DateEvaluation='2015-07-24') AND CategorieEvaluation != 'NE';

@@ -3,4 +3,4 @@ INNER JOIN jointsourcebibliographiqueevaluation
 ON idSourceBibliographique = SourceBibliographique_idSourceBibliographique
 INNER JOIN evaluationlisterouge
 ON idEvaluationListeRouge = EvaluationListeRouge_idEvaluationListeRouge
-WHERE Taxon_NomScientifique like'%Hibbertia%'
+where AireEvaluation = 'Global' AND (DateEvaluation ='2015-07-23' OR DateEvaluation='2015-07-24') AND CategorieEvaluation != 'NE';

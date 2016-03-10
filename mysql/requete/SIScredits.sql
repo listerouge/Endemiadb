@@ -3,4 +3,4 @@ INNER JOIN jointexpertevaluation
 ON idExpert = Expert_idExpert
 INNER JOIN evaluationlisterouge
 ON idEvaluationListeRouge = EvaluationListeRouge_idEvaluationListeRouge
-where Taxon_NomScientifique like '%Hibbertia%'
+WHERE AireEvaluation = 'Global' AND (DateEvaluation ='2015-07-23' OR DateEvaluation='2015-07-24') AND CategorieEvaluation != 'NE';

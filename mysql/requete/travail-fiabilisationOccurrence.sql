@@ -1,0 +1,17 @@
+SET SQL_SAFE_UPDATES=0;
+update occurrence set GpsSource='post facto' where GpsSource='';
+update occurrence set GpsSource='post facto' where GpsSource IS null;
+update occurrence set UtilisationEvaluation='NOK EVAL RLA' where FiabiliteDonnee='douteux';
+update occurrence set UtilisationEvaluation='OK EVAL RLA' where UtilisationEvaluation='';
+update occurrence set UtilisationEvaluation='OK EVAL RLA' where UtilisationEvaluation is null;
+update occurrence set DonneeSensible=0 where DonneeSensible is null;
+update occurrence set DonneeSensible=0 where DonneeSensible='';
+update occurrence set AffichagePublic=1 where AffichagePublic is null;
+update occurrence set AffichagePublic=1 where AffichagePublic='';
+update occurrence set AffichagePublic=0 where UtilisationEvaluation='NOK EVAL RLA';
+update occurrence set AffichagePublic=0 where UtilisationEvaluation='INFO EVAL RLA';
+update occurrence set AffichagePublic=0 where DonneeSensible=1;
+update occurrence set RaisonDonneeSensible='use only for assessments'where (TypeRestriction='utilisation évaluation seulement' or TypeRestriction='utilisation évaluation' or TypeRestriction='Utilisation uniquement pour les évaluations Liste rouge' or TypeRestriction='utilisation uniquement pour l''évaluation RLA' or TypeRestriction='utilisation uniquement pour l''évaluation' or TypeRestriction='utilisation uniquement dans le cadre des évaluations RLA' or TypeRestriction='utilisation pour l''évaluation seulement' or TypeRestriction='utilisation pour l''évaluation') ;
+update occurrence set RaisonDonneeSensible='risk of gathering'where (TypeRestriction='risque de collecte' or TypeRestriction='diffusion limitée, espèce rare à valeur horticole');
+update occurrence set RaisonDonneeSensible='coming from private compagny'where TypeRestriction='extractions sous accord préalable écrit du référent KNS ';
+update occurrence set RaisonDonneeSensible='coming from private compagny'where TypeRestriction='extraction à la demande';

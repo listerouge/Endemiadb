@@ -1,0 +1,11 @@
+SELECT idEvaluationListeRouge AS 'internal_taxon_id', 
+CodePreconisationConservation AS 'ConservationActions.ConservationActionsSubfield.ConservationActionsLookup',
+CategoriePreconisationEN AS 'ConservationActions.ConservationActionsSubfield.ConservationActionsName',
+NotePreconisationConservationEN AS 'ConservationActions.ConservationActionsSubfield.note' 
+FROM endemiadb.preconisationconservationstandard
+INNER JOIN jointpreconisationconservationevaluation
+ON idPreconisationConservation = PreconisationConservation_idPreconisationConservation
+INNER JOIN evaluationlisterouge
+ON idEvaluationListeRouge = EvaluationListeRouge_idEvaluationListeRouge
+INNER JOIN codeiucnpreconisation
+ON CodeIUCN = CodePreconisationConservation
